@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// Define the maximim capacity of the stack
+// Define the maximum capacity of the stack
 #define MAX_SIZE 100
 
 // Define a structure for the stack
