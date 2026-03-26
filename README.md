@@ -11,11 +11,12 @@
 
 ## Reference
 
-|     老師      |                                                                                             |
-| :-----------: | :-----------------------------------------------------------------------------------------: |
-|  Feis Studio  |   [C 語言入門](https://www.youtube.com/playlist?list=PLY_qIufNHc293YnIjVeEwNDuqGo8y2Emx)    |
-|  Jserv黃敬群  |               [你所不知道的 C 語言](https://hackmd.io/@sysprog/c-programming)               |
-| GeeksforGeeks | [DataStructure for C implementation](https://www.geeksforgeeks.org/c/implement-stack-in-c/) |
+|     作者      |                                                                                                   |
+| :-----------: | :-----------------------------------------------------------------------------------------------: |
+|  Feis Studio  |      [C 語言入門](https://www.youtube.com/playlist?list=PLY_qIufNHc293YnIjVeEwNDuqGo8y2Emx)       |
+|  Jserv黃敬群  |                  [你所不知道的 C 語言](https://hackmd.io/@sysprog/c-programming)                  |
+| GeeksforGeeks |    [DataStructure for C implementation](https://www.geeksforgeeks.org/c/implement-stack-in-c/)    |
+|   sparanoid   | [文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.md) |
 
 # command
 
