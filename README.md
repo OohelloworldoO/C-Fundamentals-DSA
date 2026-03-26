@@ -19,7 +19,7 @@
 |   sparanoid   | [文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.md) |
 |    ISO/IEC    |      [ISO/IEC 1999(E)](https://www.dii.uchile.cl/~daespino/files/Iso_C_1999_definition.pdf)       |
 
-## command
+## Command
 
 `gcc/g++ 要生成執行檔名 -o 執行檔名`  
 `./a.exe`
