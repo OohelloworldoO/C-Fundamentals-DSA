@@ -7,7 +7,7 @@
 | 3/20 |          基本數據類型、常量變量、位運算、表達式          |
 | 3/24 |    開發工具和規格標準、資料型別、迴圈、邏輯運算子(74)    |
 | 3/25 | do-while迴圈、韓信點兵(chinese remainder theorem)、stack |
-| 3/26 |            質數判斷、Function Standard Base、            |
+| 3/26 |          質數判斷、C Function Standard、math.h           |
 
 ## Reference
 
@@ -18,7 +18,17 @@
 | GeeksforGeeks |    [DataStructure for C implementation](https://www.geeksforgeeks.org/c/implement-stack-in-c/)    |
 |   sparanoid   | [文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.md) |
 
-# command
+## command
 
 `gcc/g++ 要生成執行檔名 -o 執行檔名`  
 `./a.exe`
+
+## Note
+
+|               C                | 標準函式庫與標頭檔 |                   常用功能                    |
+| :----------------------------: | :----------------: | :-------------------------------------------: |
+|            字串處理            |     <string.h>     |                                               |
+|            數學運算            |      <math.h>      |  sqrt(平方根)、ceil(無條件進位)、abs(絕對值)  |
+|         輸入與輸出處理         |     <stdio.h>      | printf(從標準輸出輸出)、scanf(從標準輸入輸入) |
+|           記憶體管理           |     <stdlib.h>     |                                               |
+| 其他跟operating system相關功能 |                    |                                               |
