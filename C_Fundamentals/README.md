@@ -32,3 +32,9 @@ $$X_{n+1}=(aX_{n} + c) \bmod m$$
 - 看起來像隨機
 
 `seed = 可控的隨機性`
+
+## rand()為何在`stdlib` 跟記憶體管理有關?
+
+## rand()跟加密`entropy` 資訊安全相關
+
+### 延伸討論 `cross entropy`
