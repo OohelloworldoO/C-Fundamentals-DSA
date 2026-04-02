@@ -31,13 +31,13 @@ Focus:
 
 ## 進度
 
-| 日期 | 進度                                                     |
-| :--: | :------------------------------------------------------- |
-| 3/20 | 基本數據類型、常量變量、位運算、表達式                   |
-| 3/24 | 開發工具和規格標準、資料型別、迴圈、邏輯運算子(74)       |
-| 3/25 | do-while迴圈、韓信點兵(chinese remainder theorem)、stack |
-| 3/26 | 質數判斷、C Function Standard、math.h 、scope            |
-| 4/2  | scope、random、latex(數學公式寫在markdown)               |
+| 日期 | 進度                                                       |
+| :--: | :--------------------------------------------------------- |
+| 3/20 | 基本數據類型、常量變量、位運算、表達式                     |
+| 3/24 | 開發工具和規格標準、資料型別、迴圈、邏輯運算子(74)         |
+| 3/25 | do-while迴圈、韓信點兵(chinese remainder theorem)、stack   |
+| 3/26 | 質數判斷、C Function Standard、math.h 、scope              |
+| 4/2  | scope、random implementations、latex(數學公式寫在markdown) |
 
 ## Reference
 
