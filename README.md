@@ -41,7 +41,7 @@ Focus:
 
 ## Reference
 
-|     作者      |                                                                                                   |
+|    Author     |                                                                                                   |
 | :-----------: | :------------------------------------------------------------------------------------------------ |
 |  Feis Studio  | [C 語言入門](https://www.youtube.com/playlist?list=PLY_qIufNHc293YnIjVeEwNDuqGo8y2Emx)            |
 | Jserv 黃敬群  | [你所不知道的 C 語言](https://hackmd.io/@sysprog/c-programming)                                   |
