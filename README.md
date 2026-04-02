@@ -1,5 +1,34 @@
 # C-Fundamentals-Data-Structures
 
+## Project Overview
+
+This repository contains my implementations of fundamental data structures and algorithms in C, along with system-level programming practices.
+
+Focus:
+
+- Pointer and memory management
+- Data structure implementation (stack, queue, linked list)
+- Algorithm practice
+- Performance understanding
+
+## Skills
+
+- C programming (pointer, memory, scope)
+- Data structures (stack, linked list, queue)
+- Algorithm implementation
+- Basic system programming concepts
+
+## Structure
+
+├── Algorithm/
+├── C_Fundamentals/
+├── DataStructure/
+│ ├── images/
+│ ├── stack/
+│ ├── queue/
+│ ├── linked_list/
+├── Leetcode/
+
 ## 進度
 
 | 日期 | 進度                                                     |
@@ -8,7 +37,7 @@
 | 3/24 | 開發工具和規格標準、資料型別、迴圈、邏輯運算子(74)       |
 | 3/25 | do-while迴圈、韓信點兵(chinese remainder theorem)、stack |
 | 3/26 | 質數判斷、C Function Standard、math.h 、scope            |
-| 3/30 | scope、random、latex(數學公式寫在markdown)               |
+| 4/2  | scope、random、latex(數學公式寫在markdown)               |
 
 ## Reference
 
