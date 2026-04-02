@@ -35,6 +35,8 @@ $$X_{n+1}=(aX_{n} + c) \bmod m$$
 
 ## rand()為何在`stdlib` 跟記憶體管理有關?
 
+`stdlib.h` 並不是**記憶體專用**標頭
+
 ## rand()跟加密`entropy` 資訊安全相關
 
 ### 延伸討論ML `cross entropy`
