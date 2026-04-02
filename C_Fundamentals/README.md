@@ -35,7 +35,17 @@ $$X_{n+1}=(aX_{n} + c) \bmod m$$
 
 ## rand()為何在`stdlib` 跟記憶體管理有關?
 
-`stdlib.h` 並不是**記憶體專用**標頭
+C 的 #include <...> 本質上是把某個模組的宣告引入進來。  
+每個 header 代表的是一組相關功能的介面，而不是某個唯一概念。
+
+`stdlib.h` 並不是**記憶體專用**標頭，而是**General Utilities** 通用工具庫  
+`string.h` 也不只是「字串」  
+`stdio.h` 也不只是`printf` 和 `scanf`  
+一個 header 裡面可以同時放多種彼此相關、但不一定完全同類型的工具。
+
+- IO → `stdio.h`
+- 字串操作 → `string.h`
+- 時間 → `time.h`
 
 ## rand()跟加密`entropy` 資訊安全相關
 

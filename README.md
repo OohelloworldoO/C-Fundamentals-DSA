@@ -49,6 +49,7 @@ Focus:
 |   sparanoid   | [文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.md) |
 |    ISO/IEC    | [ISO/IEC 1999(E)](https://www.dii.uchile.cl/~daespino/files/Iso_C_1999_definition.pdf)            |
 |    Cynthia    | [常用 LaTeX 數學符號指令](https://hackmd.io/@CynthiaChuang/Basic-LaTeX-Commands)                  |
+| CodeCrafters  | [Build your own insert-technology](https://github.com/codecrafters-io/build-your-own-x)           |
 
 ## Command
 
@@ -62,7 +63,7 @@ Focus:
 |            字串處理            |     <string.h>     |                                               |
 |            數學運算            |      <math.h>      |  sqrt(平方根)、ceil(無條件進位)、abs(絕對值)  |
 |         輸入與輸出處理         |     <stdio.h>      | printf(從標準輸出輸出)、scanf(從標準輸入輸入) |
-|           記憶體管理           |     <stdlib.h>     |                                               |
+|    通用工具庫(涵記憶體管理)    |     <stdlib.h>     |                                               |
 |                                |      <time.h>      |                                               |
 | 其他跟operating system相關功能 |                    |                                               |
 
