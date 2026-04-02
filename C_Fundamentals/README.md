@@ -15,7 +15,8 @@
 
 大多數用的是：
 
-👉 線性同餘產生器（LCG, Linear Congruential Generator）  
+$$👉 線性同餘產生器（LCG, Linear Congruential Generator）作為 seed=X_{0}$$
+**相同 seed = 永遠同一串亂數**  
 $$X_{n+1}=(aX_{n} + c) \bmod m$$
 
 - $$X_{n}:為目前的數字$$
