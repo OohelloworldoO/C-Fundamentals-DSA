@@ -20,13 +20,13 @@ Focus:
 
 ## Structure
 
-├── Algorithm/
-├── C_Fundamentals/
-├── DataStructure/
-│ ├── images/
-│ ├── stack/
-│ ├── queue/
-│ ├── linked_list/
+├── Algorithm/  
+├── C_Fundamentals/  
+├── DataStructure/  
+│ ├── images/  
+│ ├── stack/  
+│ ├── queue/  
+│ ├── linked_list/  
 ├── Leetcode/
 
 ## 進度
