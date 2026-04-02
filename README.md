@@ -8,6 +8,7 @@
 | 3/24 |    開發工具和規格標準、資料型別、迴圈、邏輯運算子(74)    |
 | 3/25 | do-while迴圈、韓信點兵(chinese remainder theorem)、stack |
 | 3/26 |      質數判斷、C Function Standard、math.h 、scope       |
+| 3/30 |                                                          |
 
 ## Reference
 
