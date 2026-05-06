@@ -50,7 +50,24 @@ void insertAtTail(Node **head, int value)
 
 void deleteNode(Node **head, int value)
 {
-    
+    if(*head == NULL) return;
+    Node *current = *head;
+    Node *previous = NULL;
+
+    if(current->data == value)
+    {
+        *head = current->next;
+        free(current);
+        return;
+    }
+    while(current != NULL && current->data != value)
+    {
+        previous = current;
+        current = current->next;
+    }
+    if(current == NULL) return;
+    previous->next = current->next;
+    free(current);
 }
 
 int main(void)
