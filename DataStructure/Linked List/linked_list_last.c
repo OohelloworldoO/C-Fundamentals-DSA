@@ -53,7 +53,6 @@ void deleteNode(Node **head, int value)
     if(*head == NULL) return;
     Node *current = *head;
     Node *previous = NULL;
-
     if(current->data == value)
     {
         *head = current->next;
@@ -66,7 +65,7 @@ void deleteNode(Node **head, int value)
         current = current->next;
     }
     if(current == NULL) return;
-    previous->next = current->next;
+    previous->next = current->next; // 既不是空 list 也不是查無此 value 那就是找到了 於是將 previous->next 指向 當前的下一個 然後刪除當前的 Node
     free(current);
 }
 
@@ -82,6 +81,7 @@ int main(void)
         printf("============================\n");
         printf("1. Insert at Head\n");
         printf("2. Insert at Tail\n");
+        printf("3 Delete the Node\n");
         printf("0. Exit\n");
         printf("----------------------------\n");
         printf("Choose: ");
@@ -98,7 +98,7 @@ int main(void)
             break;
         }
 
-        if (mode != 1 && mode != 2)
+        if (mode != 1 && mode != 2 && mode != 3)
         {
             printf("Invalid option. Try again.\n");
             continue;
@@ -112,12 +112,16 @@ int main(void)
             insertAtHead(&head, value);
             printf("Inserted %d at HEAD\n", value);
         }
-        else
+        else if(mode == 2)
         {
             insertAtTail(&head, value);
             printf("Inserted %d at TAIL\n", value);
         }
-
+        else if(mode == 3)
+        {
+            deleteNode(&head, value);
+            printf("Delete %d \n", value);
+        }
         printList(head);
     }
 
