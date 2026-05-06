@@ -133,7 +133,6 @@ int main(void)
         {
             if(deleteNode(&head, value)) printf("Delete %d \n", value);
             else printf("Value %d not found", value);
-
         }
         printList(head);
     }
