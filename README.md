@@ -114,6 +114,7 @@ Focus:
 | 2026/4/28 | linked list                                                                                                                                      |
 | 2026/4/30 | linked list(insert at head)                                                                                                                      |
 | 2026/5/1  | linked list(delete node、search、reverse linked list)                                                                                            |
+| 2026/5/6  | linked list(insert at tail、 delete node、search、reverse)、quick sort、、dijkstra algo 、leetcode(147)、queue                                   |
 
 ## Reference
 
