@@ -74,19 +74,55 @@ int main(void)
 {
     Node *head = NULL;
     int value, mode;
-    do
+
+    while (1)
     {
-        printf("please choose which kind of insertion u want\n");
-        printf("insert at head press: `1`\n");
-        printf("insert at tail press: `2`\n");
-        printf("leave press `0`\n");
-        scanf("%d", &mode);
-        if(mode == 0) break;
-        printf("please input ur value: ");
+        printf("\n============================\n");
+        printf(" Linked List Menu\n");
+        printf("============================\n");
+        printf("1. Insert at Head\n");
+        printf("2. Insert at Tail\n");
+        printf("0. Exit\n");
+        printf("----------------------------\n");
+        printf("Choose: ");
+
+        if (scanf("%d", &mode) != 1)
+        {
+            printf("Invalid input. Exiting...\n");
+            break;
+        }
+
+        if (mode == 0)
+        {
+            printf("\nExiting program...\n");
+            break;
+        }
+
+        if (mode != 1 && mode != 2)
+        {
+            printf("Invalid option. Try again.\n");
+            continue;
+        }
+
+        printf("Enter value: ");
         scanf("%d", &value);
-        if(mode == 1) insertAtHead(&head, value);
-        else if(mode == 2) insertAtTail(&head, value);
-    }while(mode != 0);
+
+        if (mode == 1)
+        {
+            insertAtHead(&head, value);
+            printf("Inserted %d at HEAD\n", value);
+        }
+        else
+        {
+            insertAtTail(&head, value);
+            printf("Inserted %d at TAIL\n", value);
+        }
+
+        printList(head);
+    }
+
+    printf("\nFinal List:");
     printList(head);
+
     return 0;
 }
