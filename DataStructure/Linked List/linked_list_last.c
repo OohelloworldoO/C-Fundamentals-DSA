@@ -70,6 +70,21 @@ int deleteNode(Node **head, int value)
     return 1;
 }
 
+void reverseList(Node **head)
+{
+    Node *previous = NULL;
+    Node *current = *head;
+    Node *next = NULL;
+    while(current != NULL)
+    {
+        next = current->next;
+        current->next = previous;
+        previous = current;
+        current = next;
+    }
+    *head = previous;
+}
+
 void freelist(Node *head)
 {
     Node *temp;

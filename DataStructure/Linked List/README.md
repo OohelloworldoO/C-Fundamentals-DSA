@@ -58,3 +58,28 @@ _改變 pointer 的指向_
 - delete node
 - search
 - reverse linked list
+
+## Reverse Linked list status 變化
+
+reverse 的核心是：
+
+1. prev = NULL（已反轉部分）
+2. current = head（還沒處理部分）
+
+```
+初始：
+prev = NULL
+current = 1→2→3
+
+Step1：
+prev = 1
+current = 2→3
+
+Step2：
+prev = 2→1
+current = 3
+
+Step3：
+prev = 3→2→1
+current = NULL
+```
