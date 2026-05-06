@@ -50,3 +50,11 @@ _改變 pointer 的指向_
 - 沒檢查 NULL newNode
 - 搞混 `data`、`pointer`
 - 搞混 `malloc 動態空間`
+
+## Linked list Map
+
+- insert at head
+- insert at tail
+- delete node
+- search
+- reverse linked list
