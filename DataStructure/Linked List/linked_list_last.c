@@ -48,25 +48,37 @@ void insertAtTail(Node **head, int value)
     current->next = newNode;
 }
 
-void deleteNode(Node **head, int value)
+int deleteNode(Node **head, int value)
 {
-    if(*head == NULL) return;
+    if(*head == NULL) return 0;
     Node *current = *head;
     Node *previous = NULL;
     if(current->data == value)
     {
         *head = current->next;
         free(current);
-        return;
+        return 1;
     }
     while(current != NULL && current->data != value)
     {
         previous = current;
         current = current->next;
     }
-    if(current == NULL) return;
+    if(current == NULL) return 0;
     previous->next = current->next; // 既不是空 list 也不是查無此 value 那就是找到了 於是將 previous->next 指向 當前的下一個 然後刪除當前的 Node
     free(current);
+    return 1;
+}
+
+void freelist(Node *head)
+{
+    Node *temp;
+    while(head != NULL)
+    {
+        temp = head;
+        head = head->next;
+        free(temp);
+    }
 }
 
 int main(void)
@@ -119,14 +131,15 @@ int main(void)
         }
         else if(mode == 3)
         {
-            deleteNode(&head, value);
-            printf("Delete %d \n", value);
+            if(deleteNode(&head, value)) printf("Delete %d \n", value);
+            else printf("Value %d not found", value);
+
         }
         printList(head);
     }
 
     printf("\nFinal List:");
     printList(head);
-
+    freelist(head);
     return 0;
 }
