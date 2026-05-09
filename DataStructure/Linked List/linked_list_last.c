@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<stdbool.h>
 typedef struct Node
 {
     int data;
@@ -96,6 +97,25 @@ void freelist(Node *head)
     }
 }
 
+bool searchValue(Node *head, int value)
+{
+    Node *current = head;
+    while(current != NULL)
+    {
+        if(current->data == value) return 1;
+        current = current->next;
+    }
+    return 0;
+}
+
+int askValue()
+{
+    int value;
+    printf("Enter value: ");
+    scanf("%d", &value);
+    return value;
+}
+
 int main(void)
 {
     Node *head = NULL;
@@ -109,6 +129,7 @@ int main(void)
         printf("1. Insert at Head\n");
         printf("2. Insert at Tail\n");
         printf("3 Delete the Node\n");
+        printf("4. search value\n");
         printf("0. Exit\n");
         printf("----------------------------\n");
         printf("Choose: ");
@@ -125,31 +146,43 @@ int main(void)
             break;
         }
 
-        if (mode != 1 && mode != 2 && mode != 3)
+        if (mode != 1 && mode != 2 && mode != 3 && mode != 4)
         {
             printf("Invalid option. Try again.\n");
             continue;
         }
 
-        printf("Enter value: ");
-        scanf("%d", &value);
-
         if (mode == 1)
         {
+            askValue();
             insertAtHead(&head, value);
             printf("Inserted %d at HEAD\n", value);
         }
         else if(mode == 2)
         {
+            askValue();
             insertAtTail(&head, value);
             printf("Inserted %d at TAIL\n", value);
         }
         else if(mode == 3)
         {
+            askValue();
             if(deleteNode(&head, value)) printf("Delete %d \n", value);
             else printf("Value %d not found", value);
         }
+        else if(mode == 4)
+        {
+            int target;
+            printf("please input the target value u want to search: ");
+            scanf("%d", &target);
+            if(searchValue(head, target))
+            {
+                printf("target value %d found\n", target);
+            }
+            else printf("target value %d not found\n", target);
+        }
         printList(head);
+
     }
 
     printf("\nFinal List:");

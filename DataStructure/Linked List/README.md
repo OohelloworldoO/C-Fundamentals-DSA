@@ -50,6 +50,7 @@ _改變 pointer 的指向_
 - 沒檢查 NULL newNode
 - 搞混 `data`、`pointer`
 - 搞混 `malloc 動態空間`
+- Double pointer 用途:修改某個 function 內結構裡面的複本 pointer 時 只需要 pointer ,但是需要修改 pointer 本身時就需要 double pointer
 
 ## Linked list Map
 
