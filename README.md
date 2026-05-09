@@ -116,8 +116,8 @@ Focus:
 | 2026/5/1  | linked list(insert at tail)                                                                                                                      |
 | 2026/5/6  | linked list(insert at tail、 delete node、search、reverse)                                                                                       |
 | 2026/5/7  | linked list(search)                                                        |
-|2026/5/9|linked list(search)        |
-|2026/5/10|dijkstra algo 、quick sort 、leetcode(21、147、2095)、queue |
+|2026/5/9|linked list(search、double pointer)        |
+|2026/5/10|stack、tree、quick sort 、leetcode(21、147、2095)、queue(暫定) |
 
 ## Reference
 
