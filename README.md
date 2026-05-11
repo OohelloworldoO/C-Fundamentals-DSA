@@ -115,9 +115,10 @@ Focus:
 | 2026/4/30 | linked list(insert at head)                                                                                                                      |
 | 2026/5/1  | linked list(insert at tail)                                                                                                                      |
 | 2026/5/6  | linked list(insert at tail、 delete node、search、reverse)                                                                                       |
-| 2026/5/7  | linked list(search)                                                        |
-|2026/5/9|linked list(search、double pointer)        |
-|2026/5/10|stack、tree、quick sort 、leetcode(21、147、2095)、queue(暫定) |
+| 2026/5/7  | linked list(search)                                                                                                                              |
+| 2026/5/9  | linked list(search、double pointer)                                                                                                              |
+| 2026/5/12 | queue、leetcode(21、147、2095)                                                                                                                   |
+| 2026/5/13 | tree、quick sort (暫定)                                                                                                                          |
 
 ## Reference
 
@@ -163,31 +164,30 @@ Focus:
 | 8. memory allocator                                                 |                     |
 | 9. my own operating system                                          |                     |
 
-
 ## DSA
 
 ### Data Structures
 
-| Data Structure | Status | Date |
-|:----------------:|:--------:|:------:|
+|    Data Structure     | Status |   Date    |
+| :-------------------: | :----: | :-------: |
 | Array / Dynamic Array | ✔ Done | 2026/4/17 |
-| Stack | ✔ Done | 2026/4/19 |
-| Linked List | ✔ Done | 2026/5/11 |
-| Queue | ✔ Done | 2026/05/ |
+|         Stack         | ✔ Done | 2026/4/19 |
+|      Linked List      | ✔ Done | 2026/5/11 |
+|         Queue         | ✔ Done | 2026/05/  |
 
 ---
 
 ### Algorithms
 
-| Algorithm | Status | Date |
-|:----------:|:--------:|:------:|
-| Binary Search | ✔ Done | 2026/4/25 |
-| Bubble Sort | ✔ Done | 2026/4/25 |
-| Insertion Sort | ✔ Done | 2026/4/26 |
-| Selection Sort | ⏳ Todo |  |
-| Merge Sort | ⏳ Todo |  |
-| Quick Sort | ✔ Done |  |
-| Linear Search | ✔ Done |  |
-| BFS | ⏳ Todo |  |
-| DFS | ⏳ Todo |  |
-| Dijkstra | ⏳ Todo |  |
+|   Algorithm    | Status  |   Date    |
+| :------------: | :-----: | :-------: |
+| Binary Search  | ✔ Done  | 2026/4/25 |
+|  Bubble Sort   | ✔ Done  | 2026/4/25 |
+| Insertion Sort | ✔ Done  | 2026/4/26 |
+| Selection Sort | ⏳ Todo |           |
+|   Merge Sort   | ⏳ Todo |           |
+|   Quick Sort   | ✔ Done  |           |
+| Linear Search  | ✔ Done  |           |
+|      BFS       | ⏳ Todo |           |
+|      DFS       | ⏳ Todo |           |
+|    Dijkstra    | ⏳ Todo |           |
