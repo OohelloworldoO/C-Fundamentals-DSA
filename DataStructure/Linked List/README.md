@@ -2,7 +2,7 @@
 
 ## 1. Definition
 
-Linked List 是一種線性資料結構，由一系列 node (節點)組成
+Linked List 是一種線性資料結構，由一連串 node 組成。
 
 每個 node 包含：
 
@@ -11,11 +11,15 @@ Linked List 是一種線性資料結構，由一系列 node (節點)組成
 
 ![Linked list](../images/linked%20list.png)
 
-`[ data | next ] → [ data | next ] → [ data | next ] → NULL`
+```text
+[ data | next ] → [ data | next ] → [ data | next ] → NULL
+```
+
+---
 
 ## Node Structure
 
-```
+```c
 typedef struct Node
 {
     int data;
@@ -23,64 +27,190 @@ typedef struct Node
 } Node;
 ```
 
-| member |           use for            |
-| :----: | :--------------------------: |
-|  Data  |           儲存數值           |
-|  Next  | 指向下一個 Node 的記憶體位址 |
+| member | 用途 |
+|------|------|
+| data | 儲存數值 |
+| next | 指向下一個 Node 的記憶體位址 |
+
+---
 
 ## Core Concept
 
-Linked List 的本質不是「搬動資料」，而是：
+Linked List 的本質不是移動資料，而是：  
 
-_改變 pointer 的指向_
+改變 pointer 的指向
+
+所有操作（insert / delete / reverse）本質都是：
+
+```text
+re-link nodes
+```
+
+---
+
+## Traversal
+
+Linked List 一定要透過 traversal 逐個 node 走訪：
+
+```c
+Node *current = head;
+
+while(current != NULL)
+{
+    current = current->next;
+}
+```
+
+---
 
 ## Time Complexity
 
-|   Operation    | Complexity |
-| :------------: | :--------: |
-| Insert At Head |   $O(1)$   |
-|    Traverse    |   $O(n)$   |
-|     Search     |   $O(n)$   |
-|     Delete     |   $O(n)$   |
+| Operation | Complexity |
+|------|------|
+| Insert at head | O(1) |
+| Insert at tail | O(n) |
+| Traverse | O(n) |
+| Search | O(n) |
+| Delete | O(n) |
+| Reverse | O(n) |
+
+---
+
+## Double Pointer（Node **head）
+
+如果 function 需要「修改 head 本身」，就要用 double pointer。
+
+```c
+void insertAtHead(Node **head, int value)
+```
+
+原因：
+
+```c
+*head = newNode;
+```
+
+會改到 main 裡的 head
+
+---
+
+### Single pointer（Node *head）
+
+用在：
+
+- traversal
+- search
+- print
+- 讀取資料
+
+---
+
+### Double pointer（Node **head）
+
+用在：
+
+- insert at head
+- delete first node
+- reverse linked list
+- 初始化 linked list
+
+---
 
 ## Common Mistake
 
-- forget `malloc`
-- forget `free`
-- 沒檢查 NULL newNode
-- 搞混 `data`、`pointer`
-- 搞混 `malloc 動態空間`
-- Double pointer 用途:修改某個 function 內結構裡面的複本 pointer 時 只需要 pointer ,但是需要修改 pointer 本身時就需要 double pointer
+- 忘記 malloc
+- 忘記 free
+- pointer 沒初始化
+- null pointer dereference
+- node 斷鏈（next 沒接好）
+- 混淆 data / pointer
+- 忘記先存 next 就改 pointer（reverse 常錯）
 
-## Linked list Map
+---
+
+## Operations List
 
 - insert at head
 - insert at tail
 - delete node
-- search
+- search value
 - reverse linked list
+- print list
+- free list
 
-## Reverse Linked list status 變化
+---
 
-reverse 的核心是：
+## Reverse Linked List（重點）
 
-1. prev = NULL（已反轉部分）
-2. current = head（還沒處理部分）
+reverse 的核心：
 
-```
-初始：
+一個一個 node 反轉 next pointer
+
+---
+
+### 初始狀態
+
+```text
 prev = NULL
-current = 1→2→3
-
-Step1：
-prev = 1
-current = 2→3
-
-Step2：
-prev = 2→1
-current = 3
-
-Step3：
-prev = 3→2→1
-current = NULL
+current = 1 → 2 → 3 → NULL
 ```
+
+---
+
+### Step 1
+
+先存下一個：
+
+```text
+next = 2
+```
+
+反轉：
+
+```text
+1 → NULL
+```
+
+移動：
+
+```text
+prev = 1
+current = 2
+```
+
+---
+
+### Step 2
+
+```text
+2 → 1 → NULL
+```
+
+移動：
+
+```text
+prev = 2
+current = 3
+```
+
+---
+
+### Step 3
+
+```text
+3 → 2 → 1 → NULL
+```
+
+最後：
+
+```c
+head = prev;
+```
+
+---
+
+## Key Insight
+
+Linked List 所有操作都只有一句話：
+
+改 pointer，不動 data
