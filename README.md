@@ -173,7 +173,8 @@ Focus:
 | Array / Dynamic Array | ✔ Done | 2026/4/17 |
 |         Stack         | ✔ Done | 2026/4/19 |
 |      Linked List      | ✔ Done | 2026/5/11 |
-|         Queue         | ✔ Done | 2026/05/  |
+|         Queue         | ✔ Done | 2026/5/12 |
+|                       |        |           |
 
 ---
 
