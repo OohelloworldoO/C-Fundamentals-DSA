@@ -7,17 +7,11 @@
  */
 struct ListNode* insertionSortList(struct ListNode* head)
 {
-    Node *temp = NULL;
-    Node *temp2 = NULL;
-    while(temp != NULL)
+    struct ListNode dummy;
+    dummy.next = NULL;
+    struct ListNode *current = head;
+    while(current != NULL)
     {
-        temp = head->next;
-        if(temp->val < head->val)
-        {  
-            temp2 = head;
-            head = temp;
-            head->next = temp2;   
-        }
-        temp = temp->next;
+        struct ListNode *next = current->next;
     }
 }
