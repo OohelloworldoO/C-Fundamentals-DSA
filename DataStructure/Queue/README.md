@@ -77,3 +77,24 @@ typedef struct Node
     struct Node *next;
 } Node;
 ```
+
+## Common Mistake
+
+- 使用 `==` 當成 assignment 應該是 `=`
+- enqueue 時沒處理空 queue
+- dequeue 後忘記更新 rear
+- 混淆 front / rear 更新順序
+
+## Important Concept: Pointer vs Struct
+
+Linked List：  
+需要 `Node \**head`  
+因為要修改「head pointer 本身」
+Queue：  
+使用 `Queue \*q`
+因為修改的是 struct 內的 front / rear
+
+本質差異：
+
+linked list 修改的是「外部 pointer」  
+queue 修改的是「struct 內的 member pointer」
