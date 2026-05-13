@@ -118,7 +118,7 @@ Focus:
 | 2026/5/7  | linked list(search)                                                                                                                              |
 | 2026/5/9  | linked list(search、double pointer)                                                                                                              |
 | 2026/5/12 | queue、leetcode(147)、insertion sort(linked list ver.)、structure type                                                                           |
-| 2026/5/13 | leetcode(21、2095)、tree、quick sort (暫定)                                                                                                      |
+| 2026/5/13 | leetcode(21、147、2095)、tree、quick sort (暫定)                                                                                                 |
 
 ## Reference
 
