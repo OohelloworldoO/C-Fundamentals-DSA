@@ -120,7 +120,7 @@ Focus:
 | 2026/5/12 | queue、leetcode(147)、insertion sort(linked list ver.)、structure type                                                                           |
 | 2026/5/19 | leetcode 147                                                                                                                                     |
 | 2026/5/20 | leetcode(21、147、206、2095)、merge sort、tree、quick sort                                                                                       |
-| 2026/5/28 | leetcode 147 、 tree、merge                                                                                                                      |
+| 2026/5/28 | leetcode 147 、merge、tree、reverse                                                                                                              |
 
 ## Reference
 
