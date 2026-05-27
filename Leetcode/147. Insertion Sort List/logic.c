@@ -12,7 +12,7 @@ struct ListNode* insertionSortList(struct ListNode* head) {
         }
     current->next = previous->next;
     previous->next = current;
-        current = next;
+    current = next;
     }
     return dummy.next;
 }
