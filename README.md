@@ -121,6 +121,7 @@ Focus:
 | 2026/5/19 | leetcode 147                                                                                                                                     |
 | 2026/5/20 | leetcode(21、147、206、2095)、merge sort、tree、quick sort                                                                                       |
 | 2026/5/28 | leetcode 147 、merge、tree、reverse                                                                                                              |
+| 2026/8/19 | review malloc、memory                                                                                                                            |
 
 ## Reference
 
